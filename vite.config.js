@@ -4,22 +4,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
- plugins: [vue()],
-//  publicPath: '/public/', 
- base: '/kmb/',
-
-   alias: {
-     '@': fileURLToPath(new URL('./src', import.meta.url))
-   },
- })
-
-// export default defineConfig({
-//  plugins: [vue()],
-//  base: '/carolingianroyaltyregistery/', 
-//  resolve: {
-//    alias: {
-//      '@': fileURLToPath(new URL('./src', import.meta.url))
-//    },
-//  }
-// })
-
+  plugins: [vue()],
+  base: '/kmb/',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
+})
