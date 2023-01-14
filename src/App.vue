@@ -17,7 +17,7 @@ onMounted(() => {
     <div class='page'>
         <div class='header'>
             <div class="header_pad">
-                <img alt="Vue logo" class="responsive" src="./assets/header.svg" height="100" />
+                <img alt="Vue logo" class="responsive" src="./assets/header.svg" height ="90" />
             </div>
         </div>
 
